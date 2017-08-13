@@ -21,7 +21,7 @@ In order to cluster together parts of the signal, we need to define a distance b
 
 Then, we align the 2 segments and average the integrals of the curve portion aligned to the left and to the right.
 
-![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/alignment.png)
+![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/alignment.gif)
 
 Applying BallTree then gives us a tag for each portion of the curve.
 
