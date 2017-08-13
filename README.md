@@ -43,12 +43,13 @@ This tag sequence is finally parsed by a HMM and the most likely state will be a
 
 ## Implementation notes
 
-__Integral computation__
+__Integral computation__<br>
 In practice the integral is approximated. At the moment we just sum 10 points on the segment.<br>
 This approximation is valid because segments have maximum one variation by construction.<br>
 However if someone know how to shift an interpolation on the time axis, it would be a great contribution.<br>
+<br>
 
-__Handling extremas__
+__Handling extremas__<br>
 In practice the algorithm run 2 times: on minimas and on maximas.<br>
 The cluster are then joined by common component since they have same index, it is valid because:<br>
 
