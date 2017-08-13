@@ -14,11 +14,25 @@ We can then use Hidden Markov Model to find the most likely sequence of cluster 
 
 ## Visually speaking
 
+__The distance metric__<br>
+In order to cluster together parts of the signal, we need to define a distance between 2 curve portion.
+
+![]()
+
+Then, we align the 2 segments and average the integrals of the curve portion aligned to the left and to the right.
+
+![]()
+
+Applying BallTree then gives us a tag for each portion of the curve.
+
 ![]()
 
 ## Formally speaking
 
 ![]()
+
+## Implementation notes
+
 
 ## Conclusion
 
