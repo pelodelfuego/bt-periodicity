@@ -16,19 +16,24 @@ We can then use Hidden Markov Model to find the most likely sequence of cluster 
 
 __The distance metric__<br>
 In order to cluster together parts of the signal, we need to define a distance between 2 curve portion.<br>
-Names here a and b.
+Names here a and b.<br>
+
 ![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/curve_portion.png)
 
 
-Then, we align the 2 segments and average the integrals of the curve portion aligned to the left and to the right.
+Then, we align the 2 segments and average the integrals of the curve portion aligned to the left and to the right.<br>
+
 ![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/alignment.gif)
 
 
 __Clustering__<br>
-Using the distance defined above,
-We can now apply BallTree to get a tag for each portion of the curve.
+Using the distance defined above,<br>
+We can now apply BallTree to get a tag for each portion of the curve.<br>
+
 ![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/signal.png)
 
+
+This tag sequence is finally parsed by a HMM and the most likely state will be a fix point in the principal period.
 
 ## Formally speaking
 
