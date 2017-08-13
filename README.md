@@ -43,11 +43,26 @@ This tag sequence is finally parsed by a HMM and the most likely state will be a
 
 ## Implementation notes
 
-* integral computation
+__Integral computation__
+In practice the integral is approximated. At the moment we just sum 10 points on the segment.<br>
+This approximation is valid because segments have maximum one variation by construction.<br>
+However if someone know how to shift an interpolation on the time axis, it would be a great contribution.<br>
 
-* extremas
-    amplitude shift
+__Handling extremas__
+In practice the algorithm run 2 times: on minimas and on maximas.<br>
+The cluster are then joined by common component since they have same index, it is valid because:<br>
+
+ * We do not capture constant portions.
+ * The interpolation is continuous.
+
+We can also note it introduce robustness to amplitude shift.
 
 
 ## Conclusion
+
+The results are quite good, allowing to detect periodicity on really noisy signals.<br>
+But not only the principal period also patterns in the signal.<br>
+We can note the importance of the tolerance parameter used for fuzzy indexing as well and the interpolation.<br>
+<br>
+A future update could allow usage of an external interpolation.
 
