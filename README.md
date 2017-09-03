@@ -41,7 +41,8 @@ We can now apply BallTree to get a tag for each portion of the curve.<br>
 
 This tag sequence is finally parsed by a HMM and the most likely state will be a fix point in the principal period.
 
-Here is the final result:<br>
+
+__Final result__<br>
 
 ![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/periods.png)
 
