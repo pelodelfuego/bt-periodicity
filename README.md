@@ -43,7 +43,7 @@ This tag sequence is finally parsed by a HMM and the most likely state will be a
 
 Here is the final result:<br>
 
-![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/period.png)
+![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/periods.png)
 
 
 ## Formally speaking
