@@ -21,7 +21,7 @@ Here a and b.<br>
 ![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/curve_portion.png)
 
 
-Then, we align the 2 segments (to the left and to the right) and average the integralsi.<br>
+Then, we align the 2 segments (to the left and to the right) and average the integral.<br>
 
 ![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/alignment.gif)
 
