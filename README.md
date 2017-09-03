@@ -24,10 +24,10 @@ Here a and b.<br>
 Then, we align the 2 segments to the left and to the right and compute the 2 integrals of the difference.<br>
 The average of both will provide the similarity metric.<br>
 
+![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/alignment.gif)
+
 Note that the segments might not have the same length;<br>
 In that case, the non overlaping portion of the smaller segment is considered as being 0.
-
-![](https://raw.githubusercontent.com/pelodelfuego/bt-periodicity/master/img/alignment.gif)
 
 As a result, a minimized distance would be equivalent to having the same shape on those 2 curve portions.
 
